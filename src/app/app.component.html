@@ -1,6 +1,10 @@
-<input type="text" placeholder="What is your name?">
-
 <p>
   Displaying the name statically.<br>
   Who is <span style="font-weight: bold;">{{ name }}?</span>
+</p>
+
+<input placeholder="What is your name?" [(ngModel)]="username" required>
+<p>
+  Displaying the name dynamically.
+  I think you are not my father <span style="font-weight: bold;">{{ username }}.</span>
 </p>
